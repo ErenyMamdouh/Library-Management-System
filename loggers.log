@@ -1,0 +1,500 @@
+2024-08-15T08:56:02.855+03:00  INFO 7688 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 7688 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T08:56:02.892+03:00 DEBUG 7688 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T08:56:02.894+03:00  INFO 7688 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T08:56:04.407+03:00  INFO 7688 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T08:56:04.525+03:00  INFO 7688 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+2024-08-15T08:56:05.917+03:00  INFO 7688 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T08:56:05.937+03:00  INFO 7688 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T08:56:05.937+03:00  INFO 7688 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T08:56:06.054+03:00  INFO 7688 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T08:56:06.055+03:00  INFO 7688 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3028 ms
+2024-08-15T08:56:06.514+03:00  INFO 7688 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T08:56:06.624+03:00  INFO 7688 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T08:56:06.693+03:00  INFO 7688 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T08:56:07.379+03:00  INFO 7688 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T08:56:07.429+03:00  INFO 7688 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T08:56:07.915+03:00  INFO 7688 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@299fc582
+2024-08-15T08:56:07.918+03:00  INFO 7688 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T08:56:08.030+03:00  WARN 7688 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T08:56:08.031+03:00  WARN 7688 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T08:56:09.527+03:00  INFO 7688 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T08:56:09.714+03:00  INFO 7688 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T08:56:10.971+03:00  WARN 7688 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T08:56:12.182+03:00  INFO 7688 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T08:56:12.194+03:00  INFO 7688 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 10.568 seconds (process running for 12.288)
+2024-08-15T09:16:20.564+03:00  INFO 7688 --- [library] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15T09:16:20.582+03:00  INFO 7688 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-15T09:16:20.694+03:00  INFO 7688 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 109 ms
+2024-08-15T09:16:21.135+03:00  INFO 7688 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method called: borrowBook with arguments: [6, 103]
+2024-08-15T09:16:21.777+03:00  INFO 7688 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method borrowBook executed in 647ms
+2024-08-15T09:19:45.092+03:00  INFO 7688 --- [library] [http-nio-8080-exec-5] com.library.Aspect.LoggingAspect         : Method called: returnBook with arguments: [6, 103]
+2024-08-15T09:19:45.348+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-5] com.library.Aspect.LoggingAspect         : Exception in method: returnBook with message: Query did not return a unique result: 2 results were returned
+2024-08-15T09:19:45.357+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 2 results were returned] with root cause
+
+org.hibernate.NonUniqueResultException: Query did not return a unique result: 2 results were returned
+	at org.hibernate.query.spi.AbstractSelectionQuery.uniqueElement(AbstractSelectionQuery.java:578) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:561) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:152) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:140) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136) ~[spring-data-jpa-3.3.2.jar:3.3.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.11.jar:6.1.11]
+	at jdk.proxy2/jdk.proxy2.$Proxy132.findByBook_BookIdAndPatron_PId(Unknown Source) ~[na:na]
+	at com.library.Service.BorrowService.returnBook(BorrowService.java:57) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.11.jar:6.1.11]
+	at com.library.Aspect.LoggingAspect.logPerformanceMetrics(LoggingAspect.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.11.jar:6.1.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.11.jar:6.1.11]
+	at com.library.Service.BorrowService$$SpringCGLIB$$0.returnBook(<generated>) ~[classes/:na]
+	at com.library.Controller.BorrowController.returnBook(BorrowController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-08-15T09:44:56.965+03:00  INFO 7688 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=John Doe, email=johndoe@example.com, phoneNumber=123-456-7890, address=123 Main St, Anytown, USA)]
+2024-08-15T09:44:57.156+03:00  INFO 7688 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method savepatron executed in 198ms
+2024-08-15T09:45:51.893+03:00  INFO 7688 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Method called: editePatron with arguments: [PatronDto(pId=null, FullName=ereny mamdouh, email=johndoe@example.com, phoneNumber=090988987, address=hhjjj), 1]
+2024-08-15T09:45:51.944+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Exception in method: editePatron with message: Patron not found with id: 1
+2024-08-15T09:46:50.814+03:00  INFO 7688 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method called: getallpatrons with arguments: []
+2024-08-15T09:46:50.922+03:00  INFO 7688 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method getallpatrons executed in 108ms
+2024-08-15T09:47:47.182+03:00  INFO 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [3]
+2024-08-15T09:47:47.191+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Exception in method: getPatronByid with message: Patron not found with id: 3
+2024-08-15T09:48:31.687+03:00  INFO 7688 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method called: deletePatronById with arguments: [1]
+2024-08-15T09:48:31.695+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Exception in method: deletePatronById with message: Patron not found with id: 1
+2024-08-15T10:06:38.325+03:00  INFO 7688 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method called: saveBook with arguments: [BookDto(bookId=null, title=Brave New World, auther=Aldous Huxley, publicationDate=Wed Aug 31 02:00:00 EET 1932, ISBN=978-0-06-085052-4)]
+2024-08-15T10:06:38.785+03:00  INFO 7688 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method saveBook executed in 491ms
+2024-08-15T10:29:24.110+03:00  WARN 7688 --- [library] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m44s36ms906µs).
+2024-08-15T11:54:43.091+03:00  INFO 7688 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Method called: saveBook with arguments: [BookDto(bookId=null, title=Brave New World, auther=Aldous Huxley, publicationDate=Wed Aug 31 02:00:00 EET 1932, ISBN=978-0-06-085052-4)]
+2024-08-15T11:54:43.254+03:00  INFO 7688 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Method saveBook executed in 166ms
+2024-08-15T11:57:55.940+03:00  INFO 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Method called: deleteBookById with arguments: [52]
+2024-08-15T11:57:56.059+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Exception in method: deleteBookById with message: Book doesn't exist with id: 52
+2024-08-15T12:00:01.535+03:00  INFO 7688 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method called: editBook with arguments: [BookDto(bookId=null, title=To Kill a Mockingbird, auther=ereny, publicationDate=Mon Jul 11 03:00:00 EEST 1960, ISBN=978-0-14-243724-7), 1]
+2024-08-15T12:00:02.377+03:00  INFO 7688 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method editBook executed in 842ms
+2024-08-15T12:02:25.117+03:00  INFO 7688 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method called: getBookById with arguments: [52]
+2024-08-15T12:02:25.167+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Exception in method: getBookById with message: Book not found with id: 52
+2024-08-15T12:02:45.785+03:00  INFO 7688 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Method called: getBookById with arguments: [1]
+2024-08-15T12:02:45.789+03:00  INFO 7688 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Method getBookById executed in 4ms
+2024-08-15T12:03:01.951+03:00  INFO 7688 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Method called: getAllBooks with arguments: []
+2024-08-15T12:03:02.040+03:00  INFO 7688 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Method getAllBooks executed in 89ms
+2024-08-15T12:27:17.865+03:00  INFO 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Method called: borrowBook with arguments: [6, 103]
+2024-08-15T12:27:18.098+03:00  INFO 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Method borrowBook executed in 234ms
+2024-08-15T12:29:50.097+03:00  INFO 7688 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method called: borrowBook with arguments: [5, 102]
+2024-08-15T12:29:50.113+03:00  INFO 7688 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method borrowBook executed in 27ms
+2024-08-15T12:30:15.208+03:00  INFO 7688 --- [library] [http-nio-8080-exec-5] com.library.Aspect.LoggingAspect         : Method called: returnBook with arguments: [5, 102]
+2024-08-15T12:30:15.942+03:00  INFO 7688 --- [library] [http-nio-8080-exec-5] com.library.Aspect.LoggingAspect         : Method returnBook executed in 734ms
+2024-08-15T12:45:18.242+03:00  INFO 7688 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=John Doe, email=johndoe@example.com, phoneNumber=123-456-7890, address=123 Main St, Anytown, USA)]
+2024-08-15T12:45:18.597+03:00  INFO 7688 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Method savepatron executed in 361ms
+2024-08-15T12:49:33.330+03:00  INFO 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Method called: editePatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=johndoe@example.com, phoneNumber=123-456-7890, address=123 Main St, Anytown, USA), 1]
+2024-08-15T12:49:33.533+03:00 ERROR 7688 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Exception in method: editePatron with message: Patron not found with id: 1
+2024-08-15T12:50:10.599+03:00  INFO 7688 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=John Doe, email=johndoe@example.com, phoneNumber=123-456-7890, address=123 Main St, Anytown, USA)]
+2024-08-15T12:50:10.622+03:00  INFO 7688 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method savepatron executed in 24ms
+2024-08-15T12:50:37.266+03:00  INFO 7688 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=John Doe, email=johndoe@example.com, phoneNumber=123-456-7890, address=123 Main St, Anytown, USA)]
+2024-08-15T12:50:37.275+03:00  INFO 7688 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method savepatron executed in 9ms
+2024-08-15T12:51:58.843+03:00  INFO 7688 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=bebi mamdouh, email=bebi@example.com, phoneNumber=090988987, address=cairo, egypt)]
+2024-08-15T12:51:58.864+03:00  INFO 7688 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method savepatron executed in 21ms
+2024-08-15T12:52:25.685+03:00  INFO 7688 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=yousef mamdouh, email=yousef@gmail.com, phoneNumber=090988987, address=cairo, egypt)]
+2024-08-15T12:52:25.796+03:00  INFO 7688 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Method savepatron executed in 111ms
+2024-08-15T12:59:36.052+03:00  INFO 7688 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T12:59:36.282+03:00  INFO 7688 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method savepatron executed in 235ms
+2024-08-15T13:00:50.198+03:00  INFO 7688 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:00:50.210+03:00  INFO 7688 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method savepatron executed in 12ms
+2024-08-15T13:01:57.764+03:00  INFO 7688 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:01:57.952+03:00  INFO 7688 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:01:58.037+03:00  INFO 7688 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:02:17.177+03:00  INFO 1336 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 1336 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:02:17.181+03:00 DEBUG 1336 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:02:17.182+03:00  INFO 1336 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:02:18.410+03:00  INFO 1336 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:02:18.558+03:00  INFO 1336 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:02:19.736+03:00  INFO 1336 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:02:19.750+03:00  INFO 1336 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:02:19.750+03:00  INFO 1336 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:02:19.830+03:00  INFO 1336 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:02:19.831+03:00  INFO 1336 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2566 ms
+2024-08-15T13:02:20.094+03:00  INFO 1336 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:02:20.174+03:00  INFO 1336 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:02:20.218+03:00  INFO 1336 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:02:20.631+03:00  INFO 1336 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:02:20.666+03:00  INFO 1336 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:02:20.911+03:00  INFO 1336 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31f7eb8
+2024-08-15T13:02:20.914+03:00  INFO 1336 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:02:21.065+03:00  WARN 1336 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:02:21.067+03:00  WARN 1336 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:02:22.607+03:00  INFO 1336 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:02:22.815+03:00  INFO 1336 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:02:24.086+03:00  WARN 1336 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:02:25.406+03:00  INFO 1336 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:02:25.418+03:00  INFO 1336 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 8.981 seconds (process running for 10.29)
+2024-08-15T13:02:33.689+03:00  INFO 1336 --- [library] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15T13:02:33.690+03:00  INFO 1336 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-15T13:02:33.691+03:00  INFO 1336 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-15T13:02:33.897+03:00  INFO 1336 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:02:34.001+03:00  INFO 1336 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method savepatron executed in 106ms
+2024-08-15T13:03:07.410+03:00  INFO 1336 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:03:07.416+03:00  INFO 1336 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:03:07.441+03:00  INFO 1336 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:03:12.414+03:00  INFO 14448 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 14448 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:03:12.417+03:00 DEBUG 14448 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:03:12.418+03:00  INFO 14448 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:03:13.653+03:00  INFO 14448 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:03:13.930+03:00  INFO 14448 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 265 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:03:15.209+03:00  INFO 14448 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:03:15.228+03:00  INFO 14448 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:03:15.229+03:00  INFO 14448 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:03:15.329+03:00  INFO 14448 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:03:15.330+03:00  INFO 14448 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2826 ms
+2024-08-15T13:03:15.656+03:00  INFO 14448 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:03:15.732+03:00  INFO 14448 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:03:15.780+03:00  INFO 14448 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:03:16.181+03:00  INFO 14448 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:03:16.216+03:00  INFO 14448 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:03:16.409+03:00  INFO 14448 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45c90a05
+2024-08-15T13:03:16.412+03:00  INFO 14448 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:03:16.491+03:00  WARN 14448 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:03:16.493+03:00  WARN 14448 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:03:18.013+03:00  INFO 14448 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:03:18.167+03:00  INFO 14448 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:03:19.366+03:00  WARN 14448 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:03:20.405+03:00  INFO 14448 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:03:20.417+03:00  INFO 14448 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 8.665 seconds (process running for 9.746)
+2024-08-15T13:07:16.586+03:00  INFO 14448 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:07:16.710+03:00  INFO 14448 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:07:16.835+03:00  INFO 14448 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:07:24.577+03:00  INFO 11784 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 11784 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:07:24.581+03:00 DEBUG 11784 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:07:24.582+03:00  INFO 11784 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:07:27.116+03:00  INFO 11784 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:07:27.293+03:00  INFO 11784 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 158 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:07:29.660+03:00  INFO 11784 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:07:29.688+03:00  INFO 11784 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:07:29.688+03:00  INFO 11784 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:07:29.829+03:00  INFO 11784 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:07:29.830+03:00  INFO 11784 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5170 ms
+2024-08-15T13:07:30.646+03:00  INFO 11784 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:07:30.819+03:00  INFO 11784 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:07:30.913+03:00  INFO 11784 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:07:32.261+03:00  INFO 11784 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:07:32.495+03:00  INFO 11784 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:07:32.912+03:00  INFO 11784 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ff6804a
+2024-08-15T13:07:32.916+03:00  INFO 11784 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:07:33.049+03:00  WARN 11784 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:07:33.051+03:00  WARN 11784 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:07:36.031+03:00  INFO 11784 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:07:36.241+03:00  INFO 11784 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:07:37.836+03:00  WARN 11784 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:07:41.327+03:00  INFO 11784 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:07:41.346+03:00  INFO 11784 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 17.488 seconds (process running for 19.237)
+2024-08-15T13:07:55.004+03:00  INFO 11784 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:07:55.007+03:00  INFO 11784 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:07:55.021+03:00  INFO 11784 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:08:06.046+03:00  INFO 8524 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 8524 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:08:06.049+03:00 DEBUG 8524 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:08:06.050+03:00  INFO 8524 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:08:07.163+03:00  INFO 8524 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:08:07.278+03:00  INFO 8524 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:08:08.411+03:00  INFO 8524 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:08:08.426+03:00  INFO 8524 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:08:08.427+03:00  INFO 8524 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:08:08.514+03:00  INFO 8524 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:08:08.515+03:00  INFO 8524 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2398 ms
+2024-08-15T13:08:08.816+03:00  INFO 8524 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:08:08.902+03:00  INFO 8524 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:08:08.948+03:00  INFO 8524 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:08:09.348+03:00  INFO 8524 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:08:09.411+03:00  INFO 8524 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:08:09.657+03:00  INFO 8524 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31f7eb8
+2024-08-15T13:08:09.661+03:00  INFO 8524 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:08:09.731+03:00  WARN 8524 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:08:09.732+03:00  WARN 8524 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:08:11.014+03:00  INFO 8524 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:08:11.120+03:00  INFO 8524 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:08:12.204+03:00  WARN 8524 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:08:13.216+03:00  INFO 8524 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:08:13.230+03:00  INFO 8524 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 7.835 seconds (process running for 9.102)
+2024-08-15T13:08:37.619+03:00  INFO 8524 --- [library] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15T13:08:37.620+03:00  INFO 8524 --- [library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-15T13:08:37.623+03:00  INFO 8524 --- [library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-15T13:08:38.114+03:00  INFO 8524 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:08:38.274+03:00  INFO 8524 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method savepatron executed in 165ms
+2024-08-15T13:09:08.795+03:00  INFO 8524 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:09:08.798+03:00  INFO 8524 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:09:08.899+03:00  INFO 8524 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:09:15.706+03:00  INFO 12604 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 12604 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:09:15.708+03:00 DEBUG 12604 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:09:15.710+03:00  INFO 12604 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:09:16.814+03:00  INFO 12604 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:09:16.949+03:00  INFO 12604 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:09:18.307+03:00  INFO 12604 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:09:18.329+03:00  INFO 12604 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:09:18.330+03:00  INFO 12604 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:09:18.693+03:00  INFO 12604 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:09:18.694+03:00  INFO 12604 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2918 ms
+2024-08-15T13:09:19.106+03:00  INFO 12604 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:09:19.191+03:00  INFO 12604 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:09:19.237+03:00  INFO 12604 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:09:19.756+03:00  INFO 12604 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:09:19.816+03:00  INFO 12604 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:09:20.128+03:00  INFO 12604 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@df7d1d4
+2024-08-15T13:09:20.131+03:00  INFO 12604 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:09:20.215+03:00  WARN 12604 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:09:20.216+03:00  WARN 12604 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:09:21.596+03:00  INFO 12604 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:09:21.715+03:00  INFO 12604 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:09:22.939+03:00  WARN 12604 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:09:24.106+03:00  INFO 12604 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:09:24.123+03:00  INFO 12604 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 9.051 seconds (process running for 10.052)
+2024-08-15T13:10:00.721+03:00  INFO 12604 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:10:00.738+03:00  INFO 12604 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:10:00.779+03:00  INFO 12604 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:10:06.705+03:00  INFO 7420 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 7420 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:10:06.708+03:00 DEBUG 7420 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:10:06.710+03:00  INFO 7420 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:10:08.095+03:00  INFO 7420 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:10:08.221+03:00  INFO 7420 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:10:09.576+03:00  INFO 7420 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:10:09.598+03:00  INFO 7420 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:10:09.599+03:00  INFO 7420 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:10:09.716+03:00  INFO 7420 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:10:09.717+03:00  INFO 7420 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2927 ms
+2024-08-15T13:10:09.992+03:00  INFO 7420 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:10:10.123+03:00  INFO 7420 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:10:10.202+03:00  INFO 7420 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:10:10.955+03:00  INFO 7420 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:10:11.006+03:00  INFO 7420 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:10:11.250+03:00  INFO 7420 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54defd69
+2024-08-15T13:10:11.254+03:00  INFO 7420 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:10:11.326+03:00  WARN 7420 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:10:11.327+03:00  WARN 7420 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:10:12.787+03:00  INFO 7420 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:10:12.915+03:00  INFO 7420 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:10:14.020+03:00  WARN 7420 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:10:15.050+03:00  INFO 7420 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:10:15.066+03:00  INFO 7420 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 9.091 seconds (process running for 10.286)
+2024-08-15T13:10:24.947+03:00  INFO 7420 --- [library] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15T13:10:24.948+03:00  INFO 7420 --- [library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-15T13:10:24.950+03:00  INFO 7420 --- [library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-15T13:10:25.304+03:00  INFO 7420 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:10:25.622+03:00  INFO 7420 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method savepatron executed in 322ms
+2024-08-15T13:11:37.465+03:00  INFO 7420 --- [library] [http-nio-8080-exec-5] com.library.Aspect.LoggingAspect         : Method called: deletePatronById with arguments: [1]
+2024-08-15T13:11:37.600+03:00 ERROR 7420 --- [library] [http-nio-8080-exec-5] com.library.Aspect.LoggingAspect         : Exception in method: deletePatronById with message: Patron not found with id: 1
+2024-08-15T13:11:55.326+03:00  INFO 7420 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Method called: deletePatronById with arguments: [1]
+2024-08-15T13:11:55.330+03:00 ERROR 7420 --- [library] [http-nio-8080-exec-6] com.library.Aspect.LoggingAspect         : Exception in method: deletePatronById with message: Patron not found with id: 1
+2024-08-15T13:12:19.528+03:00  INFO 7420 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method called: deletePatronById with arguments: [1]
+2024-08-15T13:12:19.532+03:00 ERROR 7420 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Exception in method: deletePatronById with message: Patron not found with id: 1
+2024-08-15T13:13:04.407+03:00  INFO 7420 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Method called: deletePatronById with arguments: [155]
+2024-08-15T13:13:04.510+03:00  INFO 7420 --- [library] [http-nio-8080-exec-8] com.library.Aspect.LoggingAspect         : Method deletePatronById executed in 103ms
+2024-08-15T13:13:18.990+03:00  INFO 7420 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method called: getallpatrons with arguments: []
+2024-08-15T13:13:19.361+03:00  INFO 7420 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method getallpatrons executed in 372ms
+2024-08-15T13:13:27.595+03:00  INFO 7420 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Method called: getallpatrons with arguments: []
+2024-08-15T13:13:27.604+03:00  INFO 7420 --- [library] [http-nio-8080-exec-10] com.library.Aspect.LoggingAspect         : Method getallpatrons executed in 9ms
+2024-08-15T13:13:55.224+03:00  INFO 7420 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [3]
+2024-08-15T13:13:55.228+03:00 ERROR 7420 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Exception in method: getPatronByid with message: Patron not found with id: 3
+2024-08-15T13:14:31.077+03:00  INFO 7420 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [155]
+2024-08-15T13:14:31.080+03:00 ERROR 7420 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Exception in method: getPatronByid with message: Patron not found with id: 155
+2024-08-15T13:14:41.694+03:00  INFO 7420 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [153]
+2024-08-15T13:14:41.699+03:00  INFO 7420 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method getPatronByid executed in 5ms
+2024-08-15T13:14:57.011+03:00  INFO 7420 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [52]
+2024-08-15T13:14:57.016+03:00  INFO 7420 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method getPatronByid executed in 5ms
+2024-08-15T13:29:13.467+03:00  WARN 7420 --- [library] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m1s47ms974µs100ns).
+2024-08-15T13:34:16.904+03:00  INFO 7420 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:34:17.453+03:00  INFO 7420 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method savepatron executed in 557ms
+2024-08-15T13:35:05.577+03:00  INFO 7420 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:35:05.889+03:00  INFO 7420 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:35:06.878+03:00  INFO 7420 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:35:28.269+03:00  INFO 4924 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 4924 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:35:28.277+03:00 DEBUG 4924 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:35:28.287+03:00  INFO 4924 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:35:31.908+03:00  INFO 4924 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:35:32.525+03:00  INFO 4924 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 560 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:35:38.174+03:00  INFO 4924 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:35:38.296+03:00  INFO 4924 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:35:38.298+03:00  INFO 4924 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:35:38.683+03:00  INFO 4924 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:35:38.685+03:00  INFO 4924 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10012 ms
+2024-08-15T13:35:39.691+03:00  INFO 4924 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:35:39.976+03:00  INFO 4924 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:35:40.102+03:00  INFO 4924 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:35:41.943+03:00  INFO 4924 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:35:42.177+03:00  INFO 4924 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:35:44.688+03:00  INFO 4924 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ff6804a
+2024-08-15T13:35:44.698+03:00  INFO 4924 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:35:45.211+03:00  WARN 4924 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:35:45.215+03:00  WARN 4924 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:35:49.410+03:00  INFO 4924 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:35:49.782+03:00  INFO 4924 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:35:53.023+03:00  WARN 4924 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:36:00.654+03:00  INFO 4924 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:36:00.727+03:00  INFO 4924 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 35.71 seconds (process running for 39.507)
+2024-08-15T13:36:13.813+03:00  INFO 4924 --- [library] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15T13:36:13.814+03:00  INFO 4924 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-15T13:36:13.817+03:00  INFO 4924 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-15T13:36:14.307+03:00  INFO 4924 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:36:14.645+03:00  INFO 4924 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method savepatron executed in 339ms
+2024-08-15T13:38:54.699+03:00  INFO 4924 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:38:54.834+03:00  INFO 4924 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:38:55.453+03:00  INFO 4924 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:40:08.076+03:00  INFO 15292 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 15292 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:40:08.082+03:00 DEBUG 15292 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:40:08.086+03:00  INFO 15292 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:40:10.724+03:00  INFO 15292 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:40:10.987+03:00  INFO 15292 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 237 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:40:13.553+03:00  INFO 15292 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:40:13.588+03:00  INFO 15292 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:40:13.589+03:00  INFO 15292 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:40:13.792+03:00  INFO 15292 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:40:13.794+03:00  INFO 15292 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5545 ms
+2024-08-15T13:40:14.479+03:00  INFO 15292 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:40:14.615+03:00  INFO 15292 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:40:14.698+03:00  INFO 15292 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:40:15.419+03:00  INFO 15292 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:40:15.478+03:00  INFO 15292 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:40:15.880+03:00  INFO 15292 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bbc21bd
+2024-08-15T13:40:15.886+03:00  INFO 15292 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:40:16.034+03:00  WARN 15292 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:40:16.037+03:00  WARN 15292 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:40:18.356+03:00  INFO 15292 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:40:18.629+03:00  INFO 15292 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:40:21.795+03:00  WARN 15292 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:40:24.778+03:00  INFO 15292 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:40:24.845+03:00  INFO 15292 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 18.238 seconds (process running for 20.949)
+2024-08-15T13:40:35.246+03:00  INFO 15292 --- [library] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15T13:40:35.277+03:00  INFO 15292 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-15T13:40:35.281+03:00  INFO 15292 --- [library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-15T13:40:36.793+03:00  INFO 15292 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:40:37.248+03:00  INFO 15292 --- [library] [http-nio-8080-exec-1] com.library.Aspect.LoggingAspect         : Method savepatron executed in 440ms
+2024-08-15T13:46:51.929+03:00  INFO 15292 --- [library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:46:52.137+03:00  INFO 15292 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-15T13:46:52.301+03:00  INFO 15292 --- [library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-15T13:54:02.367+03:00  INFO 13656 --- [library] [main] com.library.LibraryApplication           : Starting LibraryApplication using Java 17.0.10 with PID 13656 (D:\java\intellje projects\library\target\classes started by dell in D:\java\intellje projects\library)
+2024-08-15T13:54:02.371+03:00 DEBUG 13656 --- [library] [main] com.library.LibraryApplication           : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-15T13:54:02.373+03:00  INFO 13656 --- [library] [main] com.library.LibraryApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-08-15T13:54:05.674+03:00  INFO 13656 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T13:54:05.832+03:00  INFO 13656 --- [library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 3 JPA repository interfaces.
+2024-08-15T13:54:07.249+03:00  INFO 13656 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-15T13:54:07.269+03:00  INFO 13656 --- [library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-15T13:54:07.270+03:00  INFO 13656 --- [library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-15T13:54:07.392+03:00  INFO 13656 --- [library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-15T13:54:07.392+03:00  INFO 13656 --- [library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4921 ms
+2024-08-15T13:54:07.749+03:00  INFO 13656 --- [library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T13:54:07.839+03:00  INFO 13656 --- [library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-15T13:54:07.897+03:00  INFO 13656 --- [library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-15T13:54:08.683+03:00  INFO 13656 --- [library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-15T13:54:08.720+03:00  INFO 13656 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T13:54:09.054+03:00  INFO 13656 --- [library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fa91d5b
+2024-08-15T13:54:09.060+03:00  INFO 13656 --- [library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T13:54:09.213+03:00  WARN 13656 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-15T13:54:09.225+03:00  WARN 13656 --- [library] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-08-15T13:54:10.773+03:00  INFO 13656 --- [library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-15T13:54:10.969+03:00  INFO 13656 --- [library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-15T13:54:12.204+03:00  WARN 13656 --- [library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T13:54:13.531+03:00  INFO 13656 --- [library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-15T13:54:13.546+03:00  INFO 13656 --- [library] [main] com.library.LibraryApplication           : Started LibraryApplication in 13.125 seconds (process running for 15.691)
+2024-08-15T13:54:23.653+03:00  INFO 13656 --- [library] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-15T13:54:23.654+03:00  INFO 13656 --- [library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-15T13:54:23.655+03:00  INFO 13656 --- [library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-15T13:54:23.895+03:00  INFO 13656 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method called: savepatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=erenymamdouh222@gmail.com, phoneNumber=010601730, address=egypt ,cairo 27st)]
+2024-08-15T13:54:24.075+03:00  INFO 13656 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method savepatron executed in 185ms
+2024-08-15T13:55:17.399+03:00  INFO 13656 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method called: editePatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=johndoe@example.com, phoneNumber=123-456-7890, address=123 Main St, Anytown, USA), 2]
+2024-08-15T13:55:17.646+03:00  INFO 13656 --- [library] [http-nio-8080-exec-3] com.library.Aspect.LoggingAspect         : Method editePatron executed in 247ms
+2024-08-15T13:56:01.111+03:00  INFO 13656 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method called: editePatron with arguments: [PatronDto(pId=null, FullName=Ereny Mamdouh, email=johndoe@example.com, phoneNumber=123-456-7890, address=123 Main St, Anytown, USA), 1]
+2024-08-15T13:56:01.117+03:00 ERROR 13656 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Exception in method: editePatron with message: Patron not found with id: 1
+2024-08-15T14:04:01.684+03:00  INFO 13656 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [52]
+2024-08-15T14:04:01.871+03:00  INFO 13656 --- [library] [http-nio-8080-exec-7] com.library.Aspect.LoggingAspect         : Method getPatronByid executed in 191ms
+2024-08-15T14:07:19.181+03:00  INFO 13656 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [52]
+2024-08-15T14:07:19.239+03:00  INFO 13656 --- [library] [http-nio-8080-exec-9] com.library.Aspect.LoggingAspect         : Method getPatronByid executed in 58ms
+2024-08-15T14:10:18.469+03:00  INFO 13656 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [52]
+2024-08-15T14:10:18.476+03:00  INFO 13656 --- [library] [http-nio-8080-exec-2] com.library.Aspect.LoggingAspect         : Method getPatronByid executed in 8ms
+2024-08-15T14:10:50.231+03:00  INFO 13656 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method called: getPatronByid with arguments: [52]
+2024-08-15T14:10:50.247+03:00  INFO 13656 --- [library] [http-nio-8080-exec-4] com.library.Aspect.LoggingAspect         : Method getPatronByid executed in 16ms
