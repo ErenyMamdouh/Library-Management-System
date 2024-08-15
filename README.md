@@ -65,6 +65,8 @@ The Borrow API provides endpoints to manage the borrowing and returning of books
 
 ## 📄 API Documentation
 
+Detailed API documentation is available [here](https://documenter.getpostman.com/view/36351671/2sA3s7i91B).
+
 ### Book API
 
 - **Endpoint**: `/api/books/add`
