@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class LoggingAspect {
     private static final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-    @Pointcut("execution(* com.library.Service.*.*(..))")
+    @Pointcut("execution(* com.library.service.*.*(..))")
     public void serviceLayer() {}
 
     // Logging method calls
